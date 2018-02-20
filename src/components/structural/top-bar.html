@@ -1,0 +1,10 @@
+<template class="header" bindable="router">
+  <a href="#" class="brand">Sinellil</a>
+  <nav class="navigation">
+    <ul>
+      <li class="navigation--link ${route.isActive ? 'active' : ''}" repeat.for="route of router.navigation">
+        <a href="row.href">${row.title}</a>
+      </li>
+    </ul>
+  </nav>
+</template>

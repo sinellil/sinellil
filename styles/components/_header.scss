@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  height: 125px;
+  background-color: $main;
+  color: $background;
+  font-size: $font-size;
+}
+
+.brand {
+  position: absolute;
+  margin: 10px;
+  top: 75px;
+  text-decoration: none;
+  color: $background;
+
+  &:hover {
+    color: $highlight-text;
+  }
+}
+
+.navigation {
+  position: absolute;
+  margin: 0;
+  right: 8px;
+  top: 86px;
+  font-size: 0;
+
+  &--link {
+    height: 2.6rem;
+    text-align: center;
+    padding: $standard-padding;
+    display: inline-block;
+    font-size: 0;
+
+    a {
+      color: $background;
+      font-size: $navigation-text-size;
+      text-decoration: none;
+    }
+
+    &:hover {
+      border-bottom: $navigation-highlight-border-bottom;
+    }
+
+    &.active {
+      border-bottom: $navigation-highlight-border-bottom;
+      background-color: $highlight;
+
+      a {
+        color: $highlight-text;
+      }
+    }
+  }
+}
