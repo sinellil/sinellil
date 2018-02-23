@@ -14,9 +14,16 @@ export class App {
       {
         route: ["", "home"],
         name: "home",
-        moduleId: PLATFORM.moduleName("./app"),
+        moduleId: PLATFORM.moduleName("./home"),
         nav: true,
         title: "Welcome"
+      },
+      {
+        route: "projects",
+        name: "projects",
+        moduleId: PLATFORM.moduleName("./projects"),
+        nav: true,
+        title: "Projects"
       }
     ]);
   }
